@@ -21,9 +21,9 @@ module.exports = function(grunt) {
       }
     },
 
-    // simplemocha: {
-    //   src: ['test/**/*.js']
-    // }
+    simplemocha: {
+      src: ['test/**/*.js']
+    }
   });
   grunt.registerTask('test', ['jshint', 'jscs', 'simplemocha']);
   grunt.registerTask('default', ['test']);
